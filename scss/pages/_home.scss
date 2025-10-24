@@ -1,0 +1,24 @@
+// 1️⃣ Abstracts: variables, mixins, funciones
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins";
+
+
+// 2️⃣ Base: reset, tipografía, estilos globales
+@use "../base/reset";
+@use "../base/base";
+
+// @use "../base/typography";
+
+// 3️⃣ Layouts (solo si home los necesita)
+// @use "../layout/header";
+// @use "../layout/footer";
+// @use "../layout/grid";
+
+// 4️⃣ Components que usa la home
+@use "../components/header_navigation";
+@use "../components/hero";
+
+
+// @use "../components/buttons";
+// @use "../components/card";
+// @use "../components/hero";

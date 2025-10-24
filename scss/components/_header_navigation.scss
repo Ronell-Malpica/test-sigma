@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixin;
+@use "../components/buttons";
+
+.header {
+    $c-bg-color: #1A1A1A;
+
+    // padding-top: ;
+    background-color: $c-bg-color;
+    height: 72px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.l-header-container {
+    flex-grow: 1;
+    max-width: 1200px;
+    // border: 1px solid yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-grid {
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid yellow;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.logo {
+    // border: 1px solid red;
+    display: block;
+    width: 150px;
+    height: 100%;
+    // object-fit: contain;
+}

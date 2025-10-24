@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as var_global;
+
+.btn {
+    $c-bg-color: tomato;
+    background-color: var_global.$primary-color;
+    // background-color: ;
+    // background-color: orange;
+    color: white;
+
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .171);
+    outline: none;
+    text-decoration: none;
+    // display: flex;
+    display: inline-block;
+    // display: block;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.7em 0.8em;
+    position: relative;
+    justify-content: center;
+    align-items: center; // good line
+    line-height: 1;
+    border-radius: 3px;
+    align-self: center;
+
+    // flex-grow: 1;
+    &:hover {
+        box-shadow: 0px 4px 10px 0px rgba(50, 50, 93, .226), 0px 1px 3px 0px rgba(0, 0, 0, .08);
+    }
+}
+
+.btn-first {
+    $c-bg-color-btn-first: white;
+    color: $c-bg-color-btn-first;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, .171);
+
+    &:hover {
+        background: transparent;
+        box-shadow: inset 0px 0px 0px 1px, 0px 4px 10px 0px rgba(50, 50, 93, .226), 0px 1px 3px 0px rgba(0, 0, 0, .08);
+    }
+}
+
+.btn--large {
+    font-size: 1.2em;
+    font-size: 16.8px;
+}

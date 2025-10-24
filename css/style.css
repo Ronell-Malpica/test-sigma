@@ -1,0 +1,199 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: #9300FF;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0.7em 0.8em;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  border-radius: 3px;
+  align-self: center;
+}
+.btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 93, 0.226), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.btn-first {
+  color: white;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
+}
+.btn-first:hover {
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px, 0px 4px 10px 0px rgba(50, 50, 93, 0.226), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.btn--large {
+  font-size: 1.2em;
+  font-size: 16.8px;
+}
+
+.header {
+  background-color: #1A1A1A;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.l-header-container {
+  flex-grow: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 100%;
+}
+
+.hero {
+  border: 1px solid red;
+  padding-top: 72px;
+  background-color: #337AB7;
+  padding-bottom: 6rem;
+  color: white;
+}
+
+.l-hero-container {
+  max-width: 1200px;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-grid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: tomate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  white-space: normal;
+  font-family: "Roboto Condensed";
+  line-height: 1.2;
+  border: 1px solid red;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  text-align: center;
+  border: 1px solid yellow;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+  font-family: "Roboto";
+}
+
+/*# sourceMappingURL=style.css.map */

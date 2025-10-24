@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as var_global;
+
+@mixin mq($breakpoint_name) {
+
+    @if map-has-key(var_global.$breakpoints-list, $breakpoint_name ) {
+
+        @media screen and (min-width:map-get(var_global.$breakpoints-list, $breakpoint_name)) {
+            @content;
+        }
+    }
+
+    @else if type-of($breakpoint_name)==number and unit($breakpoint_name)=='px' {
+        @media screen and (min-width:$breakpoint_name) {
+            @content
+        }
+    }
+}

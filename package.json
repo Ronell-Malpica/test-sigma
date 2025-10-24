@@ -1,0 +1,16 @@
+{
+  "name": "sigma-level-two",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass:home": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

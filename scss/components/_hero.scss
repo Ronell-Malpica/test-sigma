@@ -1,0 +1,49 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as mixins;
+
+.hero {
+    border: 1px solid red;
+    padding-top: 72px;
+    background-color: #337AB7;
+    padding-bottom: 6rem;
+    color: white;
+    // background-color: tomato;
+
+}
+
+.l-hero-container {
+    max-width: 1200px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: tomate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__title {
+    white-space: normal;
+    // padding-top: 1.5rem;
+    font-family: 'Roboto Condensed';
+    line-height: 1.2;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    // padding-bottom: 2rem;
+}
+
+.hero__subtitle {
+    text-align: center;
+    border: 1px solid yellow;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+    font-family: 'Roboto';
+}
