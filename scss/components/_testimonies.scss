@@ -1,0 +1,97 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+$bg-testimonies: #F5F5F5;
+$font-color-title: rgb(76, 76, 76);
+$font-color-testimonies__name: #7e666c;
+$font-title: 'Roboto Condensed';
+;
+
+.testimonies {
+    background-color: $bg-testimonies;
+    padding-top: 2rem;
+
+}
+
+.grid-testimonies {
+    @include mixins.mq(680px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+}
+
+.l-testimonies {
+    $paddin-laterales: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $paddin-laterales;
+    padding-right: $paddin-laterales;
+
+
+}
+
+.testimonies__title {
+    text-align: center;
+    color: $font-color-title;
+    font-weight: 700;
+    font-size: 30.4px;
+    font-family: $font-title;
+    padding-bottom: 2rem;
+    // padding: 0;
+    white-space: normal;
+    /* permite saltos naturales */
+    word-break: keep-all;
+
+    /* mantiene las palabras completas */
+    @include mixins.mq(medium) {
+        font-size: 38px;
+    }
+
+}
+
+//testimonies items
+.testimonies__item {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    max-width: 500px;
+
+    @include mixins.mq(large) {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+
+
+.testimonies__img-container {
+    $size-img: 6rem;
+    background-color: yellow;
+    border-radius: 50%;
+    width: $size-img;
+    height: $size-img;
+    margin-bottom: 2rem;
+
+
+}
+
+.testimonies__info {
+    color: $font-color-title;
+    text-align: center;
+    font-family: 'Roboto';
+    line-height: 1.7;
+    font-size: 1.4rem;
+}
+
+.testimonies__name {
+    margin-top: 1rem;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $font-color-testimonies__name;
+}

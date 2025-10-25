@@ -1,0 +1,92 @@
+@use "../abstracts/variables" as var_globa;
+@use "../abstracts/mixins" as mixins;
+$bg-color-interview: #FFFFFF;
+$bg-color-blockquote: #F9F9F9;
+$bg-color-tag: #CFE6FF;
+
+.l-interview {
+    $separation-padding: 2rem;
+    padding-left: $separation-padding;
+    padding-right: $separation-padding;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mixins.mq(large) {
+        padding: 0;
+    }
+
+}
+
+.grid-interview-left {
+
+    @include mixins.mq(medium) {
+        grid-column: 1 / 7;
+
+    }
+
+    @include mixins.mq(large) {
+        grid-column: 2 / 6;
+    }
+
+}
+
+.interview {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.grid-interview {
+    display: grid;
+    gap: 1.5rem;
+
+    @include mixins.mq(medium) {
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+    }
+}
+
+.interview__blockquote {
+    background-color: $bg-color-blockquote;
+    border-radius: 0.5rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.interview__name {
+    display: block;
+    padding-top: 2rem;
+}
+
+.interview__list-of-tag {
+    margin-top: 1.5rem;
+}
+
+
+.tag {
+    display: inline-block;
+    border-radius: .5rem;
+    background-color: $bg-color-tag;
+    padding: .2rem .5rem .3rem;
+    margin: .23rem .1rem;
+}
+
+.container-media {
+    border-radius: 0.5rem;
+    background-color: yellow;
+    aspect-ratio: 16/ 9;
+    width: 100%;
+    height: auto;
+
+    @include mixins.mq(medium) {
+        grid-column: 7 / 13;
+
+    }
+
+    @include mixins.mq(large) {
+
+        grid-column: 6 / 12;
+    }
+}

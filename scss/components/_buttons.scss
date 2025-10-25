@@ -1,10 +1,11 @@
 @use "../abstracts/variables" as var_global;
 
+$c-bg-color-btn: #FF774D;
+$c-bg-color-btn-first: #FF774D;
+
+
 .btn {
-    $c-bg-color: tomato;
-    background-color: var_global.$primary-color;
-    // background-color: ;
-    // background-color: orange;
+    background-color: $c-bg-color-btn;
     color: white;
 
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .171);
@@ -30,7 +31,6 @@
 }
 
 .btn-first {
-    $c-bg-color-btn-first: white;
     color: $c-bg-color-btn-first;
     background: transparent;
     box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, .171);

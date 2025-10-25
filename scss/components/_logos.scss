@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+
+.logos {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: hsla(0, 0, 0, 0.9)
+}
+
+.l-logos {
+    max-width: 800px;
+    // background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.grid-logos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mixins.mq(480px) {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+.logos__logo {
+    width: 140px;
+    height: 60px;
+    object-fit: contain;
+
+}
+
+.container-img-logos {
+    display: flex;
+    justify-content: center;
+}

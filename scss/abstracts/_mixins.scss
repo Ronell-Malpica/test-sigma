@@ -1,5 +1,7 @@
 @use "../abstracts/variables" as var_global;
 
+// desdde x --> inifinite 
+//for the min-width:
 @mixin mq($breakpoint_name) {
 
     @if map-has-key(var_global.$breakpoints-list, $breakpoint_name ) {

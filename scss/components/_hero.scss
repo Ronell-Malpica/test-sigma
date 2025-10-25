@@ -1,49 +1,82 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins" as mixins;
+$color-copy: #337AB7;
+$c-bg-color :$color-copy;
 
 .hero {
-    border: 1px solid red;
+    // border: 1px solid yellow;
     padding-top: 72px;
-    background-color: #337AB7;
     padding-bottom: 6rem;
     color: white;
-    // background-color: tomato;
+    background-color: $c-bg-color;
 
 }
 
 .l-hero-container {
     max-width: 1200px;
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
 }
 
 .hero-grid {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    $laterals-paddings: 30px;
+    padding-left: $laterals-paddings;
+    padding-right: $laterals-paddings;
     background-color: tomate;
     display: flex;
     flex-direction: column;
     align-items: center;
+    // 
+
+    @include mixins.mq(medium) {
+        $laterals-paddings: 90px;
+        padding-left: $laterals-paddings;
+        padding-right: $laterals-paddings;
+    }
+
+    @include mixins.mq(large) {
+        $laterals-paddings: 200px;
+        padding-left: $laterals-paddings;
+        padding-right: $laterals-paddings;
+
+    }
 }
 
 .hero__title {
-    white-space: normal;
+    // margin: 0;
     // padding-top: 1.5rem;
     font-family: 'Roboto Condensed';
-    line-height: 1.2;
-    border: 1px solid red;
+    line-height: 1.1;
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    // padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    //
+
+    @include mixins.mq(medium) {
+        padding-bottom: 2rem;
+        font-size: 40px;
+    }
+
+    @include mixins.mq(large) {
+        font-size: 45px;
+    }
 }
 
 .hero__subtitle {
+    // padding: 0;
     text-align: center;
-    border: 1px solid yellow;
     font-size: 18px;
     font-weight: 400;
-    padding-bottom: 1.2rem;
+    padding-bottom: 2rem;
     font-family: 'Roboto';
+    //
+
+    @include mixins.mq(medium) {
+        font-size: 21px;
+        padding-bottom: 1.4rem;
+    }
+
+
+
 }

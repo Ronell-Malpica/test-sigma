@@ -53,19 +53,6 @@ h6 {
 }
 
 /* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
 /*
   10. Create a root stacking context
 */
@@ -84,7 +71,7 @@ img {
 }
 
 .btn {
-  background-color: #9300FF;
+  background-color: #FF774D;
   color: white;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
   outline: none;
@@ -105,7 +92,7 @@ img {
 }
 
 .btn-first {
-  color: white;
+  color: #FF774D;
   background: transparent;
   box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
 }
@@ -130,6 +117,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 .l-header-container {
@@ -154,46 +142,327 @@ img {
 }
 
 .hero {
-  border: 1px solid red;
   padding-top: 72px;
-  background-color: #337AB7;
   padding-bottom: 6rem;
   color: white;
+  background-color: #337AB7;
 }
 
 .l-hero-container {
   max-width: 1200px;
-  border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-grid {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: tomate;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 640px) {
+  .hero-grid {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero-grid {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
 
 .hero__title {
-  white-space: normal;
   font-family: "Roboto Condensed";
-  line-height: 1.2;
-  border: 1px solid red;
+  line-height: 1.1;
   text-align: center;
   font-size: 32px;
   font-weight: 700;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .hero__title {
+    padding-bottom: 2rem;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 45px;
+  }
 }
 
 .hero__subtitle {
   text-align: center;
-  border: 1px solid yellow;
   font-size: 18px;
   font-weight: 400;
-  padding-bottom: 1.2rem;
+  padding-bottom: 2rem;
   font-family: "Roboto";
+}
+@media screen and (min-width: 640px) {
+  .hero__subtitle {
+    font-size: 21px;
+    padding-bottom: 1.4rem;
+  }
+}
+
+.l-interview {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .l-interview {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .grid-interview-left {
+    grid-column: 1/7;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-interview-left {
+    grid-column: 2/6;
+  }
+}
+
+.interview {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.grid-interview {
+  display: grid;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 640px) {
+  .grid-interview {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+}
+
+.interview__blockquote {
+  background-color: #F9F9F9;
+  border-radius: 0.5rem;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.interview__name {
+  display: block;
+  padding-top: 2rem;
+}
+
+.interview__list-of-tag {
+  margin-top: 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 0.5rem;
+  background-color: #CFE6FF;
+  padding: 0.2rem 0.5rem 0.3rem;
+  margin: 0.23rem 0.1rem;
+}
+
+.container-media {
+  border-radius: 0.5rem;
+  background-color: yellow;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 640px) {
+  .container-media {
+    grid-column: 7/13;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-media {
+    grid-column: 6/12;
+  }
+}
+
+.logos {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: hsla(0, 0%, 0%, 0.9);
+}
+
+.l-logos {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid-logos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (min-width: 480px) {
+  .grid-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.logos__logo {
+  width: 140px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.container-img-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonies {
+  background-color: #F5F5F5;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 680px) {
+  .grid-testimonies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+}
+
+.l-testimonies {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.testimonies__title {
+  text-align: center;
+  color: rgb(76, 76, 76);
+  font-weight: 700;
+  font-size: 30.4px;
+  font-family: "Roboto Condensed";
+  padding-bottom: 2rem;
+  white-space: normal;
+  /* permite saltos naturales */
+  word-break: keep-all;
+  /* mantiene las palabras completas */
+}
+@media screen and (min-width: 640px) {
+  .testimonies__title {
+    font-size: 38px;
+  }
+}
+
+.testimonies__item {
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  max-width: 500px;
+}
+@media screen and (min-width: 1024px) {
+  .testimonies__item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.testimonies__img-container {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.testimonies__info {
+  color: rgb(76, 76, 76);
+  text-align: center;
+  font-family: "Roboto";
+  line-height: 1.7;
+  font-size: 1.4rem;
+}
+
+.testimonies__name {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7e666c;
+}
+
+.benefits {
+  background-color: #327AB7;
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.l-benefits {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 750px) {
+  .benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    align-items: center;
+  }
+}
+
+.benefits__title {
+  font-family: "Roboto Condensed";
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.benefits__headline {
+  line-height: 1;
+  font-size: 45px;
+  padding: 0;
+}
+
+.benefits__info {
+  font-family: "Roboto";
+  padding-bottom: 2rem;
+  font-size: 21px;
+}
+
+.benefits__list {
+  list-style: none;
+}
+
+.benefits__item {
+  font-family: "Roboto";
+  font-size: 21px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.benefits__img-container {
+  aspect-ratio: 16/9;
+  background-color: tomato;
 }
 
 /*# sourceMappingURL=style.css.map */
