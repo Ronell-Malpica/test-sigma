@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var_global;
 @use "../abstracts/mixins" as mixins;
-$bg-testimonies: #F5F5F5;
+
+$bg-testimonies: #F5F5F5; //it isn't white
 $font-color-title: rgb(76, 76, 76);
 $font-color-testimonies__name: #7e666c;
 $font-title: 'Roboto Condensed';

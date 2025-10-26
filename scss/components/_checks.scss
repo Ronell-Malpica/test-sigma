@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+$bg-color-cheks :#fff;
+$color-checks: #7e666c;
+;
+
+.checks {
+    background-color: $bg-color-cheks;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: $color-checks;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.l-checks {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checks__list {
+    display: block;
+    text-align: center;
+}
+
+.checks__item {
+    display: inline-block;
+
+    @include mixins.mq(medium) {
+        display: inline-block;
+    }
+}
+
+.checks__item:last-child {}
+
+.checks__item-container {
+    display: flex;
+    align-items: center;
+}
+
+.checks__item-info {
+    padding-left: .5rem;
+    padding-right: 1rem;
+}
