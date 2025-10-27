@@ -3,9 +3,13 @@
 $bg-color-service: #F5F5F5;
 $font-color-title: rgb(76, 76, 76);
 $font-color-title-item: #4c4c4c;
+$color-font-text: #7e666c;
 $font-title: 'Roboto Condensed';
 $font-text: 'Roboto';
-$color-font-text: #7e666c;
+
+.service.service-white {
+    background-color: white;
+}
 
 .service {
     background-color: $bg-color-service;

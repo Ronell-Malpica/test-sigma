@@ -1,8 +1,13 @@
 @use "../abstracts/variables" as var_global;
 @use "../abstracts/mixins" as mixins;
 $bg-color-cheks :#fff;
+$bg-color-checks-grey: #F5F5F5;
 $color-checks: #7e666c;
 ;
+
+.checks.grey {
+    background-color: $bg-color-checks-grey;
+}
 
 .checks {
     background-color: $bg-color-cheks;

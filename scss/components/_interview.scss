@@ -1,5 +1,7 @@
 @use "../abstracts/variables" as var_globa;
 @use "../abstracts/mixins" as mixins;
+$color-text: #7E666C;
+$color-tag: #666666;
 $bg-color-interview: #FFFFFF;
 $bg-color-blockquote: #F9F9F9;
 $bg-color-tag: #CFE6FF;
@@ -47,7 +49,10 @@ $bg-color-tag: #CFE6FF;
 }
 
 .interview__blockquote {
+    font-size: 19px;
+    font-style: italic;
     background-color: $bg-color-blockquote;
+    color: $color-text;
     border-radius: 0.5rem;
     padding-top: 2rem;
     padding-left: 1.5rem;
@@ -57,6 +62,7 @@ $bg-color-tag: #CFE6FF;
 
 .interview__name {
     display: block;
+    font-size: 15px;
     padding-top: 2rem;
 }
 
@@ -66,11 +72,13 @@ $bg-color-tag: #CFE6FF;
 
 
 .tag {
+    color: $color-tag;
     display: inline-block;
     border-radius: .5rem;
     background-color: $bg-color-tag;
     padding: .2rem .5rem .3rem;
     margin: .23rem .1rem;
+    text-transform: uppercase;
 }
 
 .container-media {

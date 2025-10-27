@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+@use "../components/buttons";
+$bg-color-cta: #337AB7;
+$color-cta: #fff;
+$color-title: #4c4c4c;
+$color-text :#7e666c;
+$font-title: 'Roboto Condensed';
+$font-text: 'Roboto';
+
+.cta.cta-white {
+    background-color: $color-cta;
+}
+
+.cta {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    $p: 30px;
+    background-color: $bg-color-cta;
+    color: $color-cta;
+    padding-left: $p;
+    padding-right: $p;
+}
+
+.l-cta {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-cta {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cta__title {
+    text-align: center;
+    font-family: $font-title;
+    font-size: 30px;
+    line-height: 1.3;
+
+}
+
+.cta__title.cta__title-grey {
+    color: $color-title;
+}
+
+
+.cta__subtitle {
+    font-family: $font-text;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    font-size: 21px;
+}
+
+.cta__subtitle.cta__subtitle-grey {
+    color: $color-text;
+}

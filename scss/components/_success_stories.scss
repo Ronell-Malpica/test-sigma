@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+$color-title: #4c4c4c;
+$color-text :#7e666c;
+$color-blue :#337AB7;
+$bg-color: #F5F5F5;
+$font-title: 'Roboto Condensed';
+$font-text: 'Roboto';
+
+.success-stories {
+    background-color: $bg-color;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 4rem;
+}
+
+.l-success-stories {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-success-stories {
+    display: grid;
+    gap: 2rem;
+
+    @include mixins.mq(600px) {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.success-stories__title {
+    text-align: center;
+    font-family: $font-title;
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: $color-title;
+
+}
+
+.success-stories__item {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container-img__successs-stories {
+    // border-radius: 0.5rem;
+    background-color: yellow;
+    aspect-ratio: 16/ 9;
+    width: 100%;
+    height: auto;
+}
+
+.success__content {
+    background-color: #FFf;
+    color: $color-text;
+    padding: 1rem;
+    font-family: $font-text;
+
+}
+
+.success-stories__item-title {
+    color: $color-title;
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.success-stories__info {
+    padding-bottom: 1rem;
+}
+
+.success-stories__sector {
+    font-style: italic;
+}

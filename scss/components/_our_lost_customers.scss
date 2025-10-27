@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+$color-title: #4c4c4c;
+$color-text :#7e666c;
+$color-blue :#337AB7;
+$font-title: 'Roboto Condensed';
+$font-text: 'Roboto';
+
+.lost_customers {
+    color: white;
+    background-color: $color-blue;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+
+.l-lost_customers {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-lost_customers {
+    display: grid;
+    gap: 2rem;
+
+    // background-color: tomato;
+    @include mixins.mq(600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.lost_customers__item {
+    // border: 1px solid yellow;
+}
+
+.lost_customers__title {
+    text-align: center;
+    font-family: $font-title;
+    font-size: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.lost_customers__item:last-child {
+    @include mixins.mq(600px) {
+
+        grid-column: span 2;
+    }
+}
+
+.lost_customers__item-title {
+    font-family: $font-text;
+    font-size: 20px;
+}
+
+.lost_customers__item__info {
+    font-family: $font-text;
+    font-size: 18px;
+    font-weight: 400;
+
+}

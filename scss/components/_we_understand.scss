@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+$color-title: #4c4c4c;
+$color-text :#7e666c;
+$color-blue :#337AB7;
+$font-title: 'Roboto Condensed';
+$font-text: 'Roboto';
+
+.we-understand {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.l-we-understand {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.we-understand__title {
+    font-family: $font-title;
+    color: $color-title;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.we-understand__list {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    padding: 0;
+}
+
+//item
+.we-understand__item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.icon-we-understand {
+    $icon-size: 70px;
+    flex-shrink: 0;
+    position: relative;
+    width: $icon-size;
+    height: $icon-size;
+    background-color: $color-blue;
+    border-radius: 50%;
+}
+
+.we-understand__info {
+    font-size: 18px;
+    max-width: 500px;
+    font-family: $font-text;
+    color: $color-text;
+}

@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+$color-title: #4c4c4c;
+$color-text :#7e666c;
+$color-blue :#337AB7;
+$font-title: 'Roboto Condensed';
+$font-text: 'Roboto';
+
+.average {
+    // background-color: red;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.l-average {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-average {
+    display: flex;
+    flex-wrap: wrap;
+    /* 🔥 Permite que los elementos bajen a la siguiente fila */
+    justify-content: center;
+    /* 🔥 Centra horizontalmente los elementos de cada fila */
+    gap: 30px;
+    /* Espacio entre elementos */
+    max-width: 1000px;
+    /* Ejemplo de límite de ancho */
+    margin: 0 auto;
+}
+
+.average__card {
+
+    flex: 0 1 260px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.average__title {
+    font-size: 30px;
+    font-family: $font-title;
+    padding-bottom: 60px;
+    text-align: center;
+    color: $color-title;
+}
+
+
+
+.average__content {
+    padding: 1rem;
+    color: $color-title;
+}
+
+
+.average__number {
+    font-family: $font-title;
+    color: white;
+    background-color: $color-blue;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.average__info-text {
+
+    color: $color-text;
+    font-size: 17px;
+
+}
+
+.average__content {
+    font-family: $font-text;
+}
+
+.average-h {
+    // background-color: tomato;
+    font-size: 20px;
+}
