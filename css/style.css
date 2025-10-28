@@ -873,4 +873,93 @@ img {
   font-style: italic;
 }
 
+.faq {
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #337AB7;
+  padding-bottom: 4rem;
+}
+
+.l-faq {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq__title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: "Roboto Condensed";
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container-icon-faq {
+  width: 60px;
+  height: 60px;
+  background-color: tomato;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.faq__item__title {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-bottom: 3rem;
+}
+
+.faq__content {
+  display: grid;
+  justify-content: center;
+}
+
+.accordion__item {
+  max-width: 800px;
+}
+.accordion__item:last-child {
+  border-bottom: 1px solid white;
+  margin-bottom: 3rem;
+}
+
+.accordion__header {
+  cursor: pointer;
+  font-size: 18px;
+  border-top: 1px solid;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.accordion__header::after {
+  position: absolute;
+  content: "+";
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  line-height: 14px;
+  font-size: 20px;
+  top: 20px;
+  right: 10px;
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(0);
+  text-align: center;
+}
+
+.accordion__header.open::after {
+  transform: rotate(135deg);
+}
+
+.accordion__body {
+  font-family: "Roboto";
+  font-size: 17px;
+  display: none;
+}
+
+.accordion__body.active {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
