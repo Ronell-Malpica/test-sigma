@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var_global;
+@use "../abstracts/mixins" as mixins;
+
+$bg-color: #000000;
+$color: white;
+
+.locations {
+    background-color: $bg-color;
+    color: $color;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-bottom: 1px solid $color;
+}
+
+.grid-locations {
+    display: grid;
+    gap: 2rem;
+
+    @include mixins.mq(600px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.location_icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.location__item {
+    text-align: center;
+}

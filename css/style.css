@@ -150,7 +150,7 @@ img {
   padding-top: 72px;
   padding-bottom: 6rem;
   color: white;
-  background-color: #337AB7;
+  background-color: #9300FF;
 }
 
 .l-hero-container {
@@ -960,6 +960,81 @@ img {
 
 .accordion__body.active {
   display: block;
+}
+
+.locations {
+  background-color: #000000;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  border-bottom: 1px solid white;
+}
+
+.grid-locations {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .grid-locations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.location_icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.location__item {
+  text-align: center;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.l-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+  .grid-footer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+.top-footer {
+  padding-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-links-footer {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (min-width: 600px) {
+  .grid-links-footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

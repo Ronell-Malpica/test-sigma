@@ -1,4 +1,4 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as var_global;
 @use "../abstracts/mixins" as mixins;
 $color-copy: #337AB7;
 $c-bg-color :$color-copy;
@@ -8,7 +8,7 @@ $c-bg-color :$color-copy;
     padding-top: 72px;
     padding-bottom: 6rem;
     color: white;
-    background-color: $c-bg-color;
+    background-color: var_global.$primary-color;
 
 }
 
