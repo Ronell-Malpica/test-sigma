@@ -313,7 +313,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../assets/brand/bg-pattern-quotation.svg");
+  background: url("./../../assets/brand/bg-pattern-quotation.svg");
   background-position: cover;
   height: 40px;
   width: 40px;
