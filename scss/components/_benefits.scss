@@ -6,9 +6,13 @@ $color-benefits: #fff;
 .benefits {
     background-color: $bg-color-benefits;
     color: $color-benefits;
+    padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(135deg, #9300FF, #1A0033);
+    background: radial-gradient(circle at center, #9300FF 0%, #1A0033 100%);
+
 }
 
 .l-benefits {
@@ -51,16 +55,22 @@ $color-benefits: #fff;
 // lista
 .benefits__list {
     list-style: none;
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+    @include mixin.mq(750px) {
+        padding-bottom: 0;
+    }
 }
 
 .benefits__item {
     font-family: var_global.$font-family-text;
     font-size: 21px;
     font-weight: 500;
-    padding-bottom: 2rem;
 }
 
 .benefits__img-container {
     aspect-ratio: 16 / 9;
-    background-color: tomato;
+    background-color: var_global.$bg-color-tag;
 }

@@ -16,7 +16,7 @@ $font-text: 'Roboto';
     padding-top: 60px;
     padding-bottom: 60px;
     $p: 30px;
-    background-color: $bg-color-cta;
+    background-color: var_global.$dark-purple;
     color: $color-cta;
     padding-left: $p;
     padding-right: $p;

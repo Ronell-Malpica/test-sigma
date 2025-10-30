@@ -12,7 +12,7 @@ $font-text: 'Roboto';
     color: white;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: $color-blue;
+    background-color: var_global.$dark-purple;
     padding-bottom: 4rem;
 }
 
@@ -36,7 +36,7 @@ $font-text: 'Roboto';
     $icon-size: 60px;
     width: $icon-size;
     height: $icon-size;
-    background-color: tomato;
+    background-color: var_global.$bg-color-tag;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -72,6 +72,7 @@ $font-text: 'Roboto';
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
+    padding-right: 2rem;
 }
 
 .accordion__header::after {

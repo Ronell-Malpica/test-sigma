@@ -75,9 +75,17 @@ img {
   height: auto;
 }
 
+#call {
+  padding-bottom: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
-  background-color: #FF774D;
-  color: white;
+  background-color: #B066FF;
+  color: #FFFFFF;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
   outline: none;
   text-decoration: none;
@@ -91,13 +99,45 @@ img {
   line-height: 1;
   border-radius: 3px;
   align-self: center;
+  transition: all 0.3s ease;
 }
 .btn:hover {
   box-shadow: 0px 4px 10px 0px rgba(50, 50, 93, 0.226), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  background-color: #A000FF;
+}
+
+.btn.btn-white {
+  color: white;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
+}
+.btn.btn-white:hover {
+  color: #B066FF;
+}
+
+.btn.btn-prueba-1 {
+  background-color: #FFFFFF;
+  color: #9300FF;
+}
+.btn.btn-prueba-1:hover {
+  background-color: #E5E5E5;
+}
+
+.btn.btn-prueba-2 {
+  background-color: #00CFFF;
+  color: #fff;
+}
+
+.btn.btn-prueba-3 {
+  background-color: #B066FF;
+  color: #fff;
+}
+.btn.btn-prueba-3:hover {
+  background-color: #A000FF;
 }
 
 .btn-first {
-  color: #FF774D;
+  color: white;
   background: transparent;
   box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, 0.171);
 }
@@ -151,6 +191,8 @@ img {
   padding-bottom: 6rem;
   color: white;
   background-color: #9300FF;
+  background: linear-gradient(135deg, #9300FF, #1A0033);
+  background: radial-gradient(circle at center, #9300FF 0%, #1A0033 100%);
 }
 
 .l-hero-container {
@@ -264,6 +306,21 @@ img {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 2rem;
+  position: relative;
+}
+.interview__blockquote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../assets/brand/bg-pattern-quotation.svg");
+  background-position: cover;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  translate: -50% -50%;
 }
 
 .interview__name {
@@ -277,10 +334,10 @@ img {
 }
 
 .tag {
-  color: #666666;
+  color: #5A00A8;
   display: inline-block;
   border-radius: 0.5rem;
-  background-color: #CFE6FF;
+  background-color: #E4CCFF;
   padding: 0.2rem 0.5rem 0.3rem;
   margin: 0.23rem 0.1rem;
   text-transform: uppercase;
@@ -288,7 +345,7 @@ img {
 
 .container-media {
   border-radius: 0.5rem;
-  background-color: yellow;
+  background-color: #5A00A8;
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
@@ -343,11 +400,15 @@ img {
 .testimonies {
   background-color: #F5F5F5;
   padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
+.grid-testimonies {
+  display: grid;
+  gap: 2rem;
+}
 @media screen and (min-width: 680px) {
   .grid-testimonies {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem;
   }
@@ -384,7 +445,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
   max-width: 500px;
 }
 @media screen and (min-width: 1024px) {
@@ -395,7 +455,7 @@ img {
 }
 
 .testimonies__img-container {
-  background-color: yellow;
+  background-color: #5A00A8;
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
@@ -407,7 +467,28 @@ img {
   text-align: center;
   font-family: "Roboto";
   line-height: 1.7;
-  font-size: 1.4rem;
+  font-size: 19px;
+  position: relative;
+  padding: 1rem;
+}
+@media screen and (min-width: 680px) {
+  .testimonies__info {
+    padding-top: 2rem;
+  }
+}
+.testimonies__info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../assets/brand/bg-pattern-quotation.svg");
+  background-position: cover;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  translate: -50% -50%;
 }
 
 .testimonies__name {
@@ -421,9 +502,12 @@ img {
 .benefits {
   background-color: #327AB7;
   color: #fff;
+  padding-top: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(135deg, #9300FF, #1A0033);
+  background: radial-gradient(circle at center, #9300FF 0%, #1A0033 100%);
 }
 
 .l-benefits {
@@ -463,18 +547,25 @@ img {
 
 .benefits__list {
   list-style: none;
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 750px) {
+  .benefits__list {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__item {
   font-family: "Roboto";
   font-size: 21px;
   font-weight: 500;
-  padding-bottom: 2rem;
 }
 
 .benefits__img-container {
   aspect-ratio: 16/9;
-  background-color: tomato;
+  background-color: #E4CCFF;
 }
 
 .checks.grey {
@@ -571,7 +662,7 @@ img {
 .service__img-container {
   width: 4rem;
   height: 4rem;
-  background-color: tomato;
+  background-color: #5A00A8;
   border-radius: 50%;
 }
 
@@ -608,7 +699,7 @@ img {
 .cta {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #337AB7;
+  background-color: #5A00A8;
   color: #fff;
   padding-left: 30px;
   padding-right: 30px;
@@ -696,6 +787,7 @@ img {
   font-family: "Roboto Condensed";
   color: white;
   background-color: #337AB7;
+  background-color: #5A00A8;
   text-align: center;
   font-size: 3rem;
 }
@@ -750,7 +842,7 @@ img {
   position: relative;
   width: 70px;
   height: 70px;
-  background-color: #337AB7;
+  background-color: #5A00A8;
   border-radius: 50%;
 }
 
@@ -763,7 +855,7 @@ img {
 
 .lost_customers {
   color: white;
-  background-color: #337AB7;
+  background-color: #5A00A8;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 60px;
@@ -877,7 +969,7 @@ img {
   color: white;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #337AB7;
+  background-color: #5A00A8;
   padding-bottom: 4rem;
 }
 
@@ -898,7 +990,7 @@ img {
 .container-icon-faq {
   width: 60px;
   height: 60px;
-  background-color: tomato;
+  background-color: #E4CCFF;
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -931,6 +1023,7 @@ img {
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
+  padding-right: 2rem;
 }
 
 .accordion__header::after {

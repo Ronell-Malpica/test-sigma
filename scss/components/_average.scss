@@ -60,6 +60,9 @@ $font-text: 'Roboto';
     font-family: $font-title;
     color: white;
     background-color: $color-blue;
+    // background: radial-gradient(circle at center, #9300FF 0%, #1A0033 100%);
+    background-color: var_global.$dark-purple;
+
     text-align: center;
     font-size: 3rem;
 }

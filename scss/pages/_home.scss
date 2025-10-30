@@ -1,6 +1,6 @@
 // 1️⃣ Abstracts: variables, mixins, funciones
 @use "../abstracts/variables" as var_global;
-@use "../abstracts/mixins";
+@use "../abstracts/mixins" as mixins;
 
 
 // 2️⃣ Base: reset, tipografía, estilos globales

@@ -63,7 +63,7 @@ $size-container-img: 4rem;
 .service__img-container {
     width: $size-container-img;
     height: $size-container-img;
-    background-color: tomato;
+    background-color: var_global.$dark-purple;
     border-radius: 50%;
 }
 

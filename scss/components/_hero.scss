@@ -9,6 +9,19 @@ $c-bg-color :$color-copy;
     padding-bottom: 6rem;
     color: white;
     background-color: var_global.$primary-color;
+    // background-color: tomato;
+    background: linear-gradient(135deg, #9300FF, #1A0033);
+    background: radial-gradient(circle at center, #9300FF 0%, #1A0033 100%);
+    // background: radial-gradient(circle at 30% 30%, #9300FF 0%, #1A0033 100%);
+    // background: radial-gradient(ellipse at center, #9300FF 0%, #5B00B8 60%, #1A0033 100%);
+    // background:
+    //     radial-gradient(circle at 25% 25%, #9300FF 0%, transparent 40%),
+    //     radial-gradient(circle at 75% 75%, #1A0033 0%, transparent 50%),
+    //     linear-gradient(135deg, #9300FF, #1A0033);
+
+
+
+
 
 }
 

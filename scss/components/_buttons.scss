@@ -1,12 +1,13 @@
 @use "../abstracts/variables" as var_global;
 
-$c-bg-color-btn: #FF774D;
-$c-bg-color-btn-first: #FF774D;
-
+$bg-color-default-btn: #B066FF;
+$color-default-btn: #FFFFFF;
+$bg-colo-default-btn-hover: #A000FF;
 
 .btn {
-    background-color: $c-bg-color-btn;
-    color: white;
+
+    background-color: $bg-color-default-btn;
+    color: $color-default-btn;
 
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .171);
     outline: none;
@@ -23,15 +24,56 @@ $c-bg-color-btn-first: #FF774D;
     line-height: 1;
     border-radius: 3px;
     align-self: center;
+    transition: all 0.3s ease;
 
     // flex-grow: 1;
+
+
     &:hover {
         box-shadow: 0px 4px 10px 0px rgba(50, 50, 93, .226), 0px 1px 3px 0px rgba(0, 0, 0, .08);
+        background-color: $bg-colo-default-btn-hover;
     }
 }
 
+.btn.btn-white {
+    color: white;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, .171);
+
+    &:hover {
+        color: #B066FF;
+    }
+}
+
+.btn.btn-prueba-1 {
+    background-color: #FFFFFF;
+    color: #9300FF;
+
+    &:hover {
+        background-color: #E5E5E5;
+    }
+}
+
+.btn.btn-prueba-2 {
+    background-color: #00CFFF;
+    color: #fff;
+}
+
+.btn.btn-prueba-3 {
+    background-color: #B066FF;
+    color: #fff;
+
+    &:hover {
+        background-color: #A000FF;
+    }
+}
+
+
+
+
+
 .btn-first {
-    color: $c-bg-color-btn-first;
+    color: white;
     background: transparent;
     box-shadow: inset 0px 0px 0px 1px, 0px 1px 2px 0px rgba(0, 0, 0, .171);
 

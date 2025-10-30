@@ -1,10 +1,12 @@
 @use "../abstracts/variables" as var_globa;
 @use "../abstracts/mixins" as mixins;
 $color-text: #7E666C;
-$color-tag: #666666;
+// $color-tag: #666666;
+$color-tag: #5A00A8;
 $bg-color-interview: #FFFFFF;
 $bg-color-blockquote: #F9F9F9;
-$bg-color-tag: #CFE6FF;
+// $bg-color-tag: #CFE6FF;
+$bg-color-tag: #E4CCFF;
 
 .l-interview {
     $separation-padding: 2rem;
@@ -58,7 +60,34 @@ $bg-color-tag: #CFE6FF;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 2rem;
+    position: relative;
+
+    &::before {
+        // color: white;
+        $icon-size: 40px;
+        content: '';
+        position: absolute;
+        // border: 1px solid red;
+        top: 0;
+        left: 0;
+        background: url("../../assets/brand/bg-pattern-quotation.svg");
+        background-position: cover;
+        height: $icon-size;
+        width: $icon-size;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        // top: -10;
+        translate: -50% -50%;
+
+    }
+
+
 }
+
+
+
+
 
 .interview__name {
     display: block;
@@ -83,7 +112,7 @@ $bg-color-tag: #CFE6FF;
 
 .container-media {
     border-radius: 0.5rem;
-    background-color: yellow;
+    background-color: $color-tag;
     aspect-ratio: 16/ 9;
     width: 100%;
     height: auto;

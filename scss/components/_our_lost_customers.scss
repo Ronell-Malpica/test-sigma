@@ -8,7 +8,7 @@ $font-text: 'Roboto';
 
 .lost_customers {
     color: white;
-    background-color: $color-blue;
+    background-color: var_global.$dark-purple;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 60px;

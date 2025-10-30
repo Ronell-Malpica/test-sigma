@@ -7,7 +7,7 @@
 
     // padding-top: ;
     background-color: $c-bg-color;
-    height: 72px;
+    height: var_global.$header-height;
 
     width: 100%;
     display: flex;
